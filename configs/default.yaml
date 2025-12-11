@@ -1,0 +1,45 @@
+
+seed: 11
+sample: {start: "1960Q1", end: "2023Q2"}   # Shiller earnings/dividends end in 2023Q2
+
+forecast:
+  items: [earnings, dividends]
+  horizons: [1, 4]
+  first_origin: "1985Q1"      # rolling-origin forecasts from here (calibration history for intervals)
+  evaluation_start: "2000Q1"  # every score and coverage figure is computed from here
+  min_train: 60
+  winsor: 0.025               # training-window outlier treatment for own-growth features and targets
+  production_model: regime_ardl
+
+intervals:
+  alpha: 0.10                 # 90% intervals
+  window: 40                  # calibration window, quarters
+  gamma: 0.05                 # ACI step size
+
+breaks:
+  max_breaks: 4
+  min_size: 16
+
+# Macro scenarios over 9 quarters from the 2023Q2 jump-off. Units: GDP and
+# inflation % annualised, 10Y change in pp per quarter, equity log return % per quarter.
+scenarios:
+  horizon: 9
+  paths: 20000
+  mean_block: 4               # stationary bootstrap mean block length (quarters)
+  definitions:
+    Baseline: {gdp_g: 2.0, infl: 2.5, d_ust10y: 0.0, eq_ret: 2.0}
+    Adverse:
+      gdp_g: [-3.0, -2.5, -1.0, 0.5, 1.5, 2.0, 2.0, 2.5, 2.5]
+      infl: 2.0
+      d_ust10y: [-0.3, -0.2, -0.1, 0, 0, 0, 0, 0, 0]
+      eq_ret: [-8, -6, -3, 2, 3, 3, 3, 3, 3]
+    Severely adverse:   # equities -58% over three quarters, as in the Fed's 2026 severely adverse scenario
+      gdp_g: [-8.0, -7.0, -4.0, -1.0, 1.0, 2.0, 2.5, 3.0, 3.0]
+      infl: [1.0, 0.5, 0.5, 1.0, 1.5, 2.0, 2.0, 2.0, 2.0]
+      d_ust10y: [-0.6, -0.5, -0.3, 0, 0, 0, 0, 0, 0]
+      eq_ret: [-35.0, -30.0, -21.7, 5, 5, 5, 5, 5, 5]
+    Stagflation:
+      gdp_g: [-2.0, -2.5, -1.5, -0.5, 0.5, 1.0, 1.5, 1.5, 2.0]
+      infl: [8.0, 8.0, 7.0, 6.0, 5.0, 4.5, 4.0, 3.5, 3.0]
+      d_ust10y: [0.5, 0.4, 0.3, 0.1, 0, 0, 0, 0, 0]
+      eq_ret: [-6, -5, -3, 0, 2, 2, 2, 2, 2]
