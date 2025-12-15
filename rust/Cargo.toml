@@ -1,0 +1,18 @@
+[package]
+name = "plancast_engine"
+version = "0.1.0"
+edition = "2021"
+description = "Monte Carlo scenario engine for PlanCast: ARX recursion with stationary block-bootstrap shocks"
+license = "MIT"
+
+[lib]
+name = "plancast_engine"
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+pyo3 = { version = "0.23", features = ["extension-module", "abi3-py310"] }
+numpy = "0.23"
+
+[profile.release]
+opt-level = 3
+lto = true
