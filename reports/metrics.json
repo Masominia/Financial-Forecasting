@@ -1,0 +1,642 @@
+{
+  "regimes": {
+    "recession_mean": -2.161681228198321,
+    "expansion_mean": 3.592240033761764,
+    "auc_full": 0.9808558558558559,
+    "auc_realtime": 0.9868565169769989,
+    "gdp_vol_breaks": [
+      "1980Q2",
+      "1984Q3"
+    ],
+    "earnings_vol_breaks": [
+      "2007Q3",
+      "2011Q3"
+    ]
+  },
+  "forecast": {
+    "earnings_h1": [
+      {
+        "index": "naive",
+        "RMSE": 22.757094035610837,
+        "MAE": 10.293484788237325,
+        "RMSE vs naive": 1.0,
+        "MAE, recession quarters": 30.06911356631075,
+        "MAE, expansion quarters": 7.64065653752016,
+        "DM vs naive": null,
+        "DM p": null
+      },
+      {
+        "index": "mean",
+        "RMSE": 22.741964947059767,
+        "MAE": 9.912355062042192,
+        "RMSE vs naive": 0.9993351924227497,
+        "MAE, recession quarters": 31.3596960530453,
+        "MAE, expansion quarters": 7.0352727339808006,
+        "DM vs naive": -0.10568026884221901,
+        "DM p": 0.9160661172531227
+      },
+      {
+        "index": "ar",
+        "RMSE": 20.88128400361137,
+        "MAE": 8.388358354993331,
+        "RMSE vs naive": 0.9175725147919082,
+        "MAE, recession quarters": 26.304293195787444,
+        "MAE, expansion quarters": 5.985001242203876,
+        "DM vs naive": -2.480854909229872,
+        "DM p": 0.01492412352365045
+      },
+      {
+        "index": "ardl",
+        "RMSE": 20.510796174463678,
+        "MAE": 8.345480766394843,
+        "RMSE vs naive": 0.9012924120438182,
+        "MAE, recession quarters": 25.099687314525998,
+        "MAE, expansion quarters": 6.0979652538406635,
+        "DM vs naive": -2.3999366663775774,
+        "DM p": 0.018412556445252626
+      },
+      {
+        "index": "regime_ardl",
+        "RMSE": 20.54803756065749,
+        "MAE": 8.365120278224694,
+        "RMSE vs naive": 0.9029288857577087,
+        "MAE, recession quarters": 25.189775025753146,
+        "MAE, expansion quarters": 6.108154397458682,
+        "DM vs naive": -2.4014334458105857,
+        "DM p": 0.018341944680486316
+      },
+      {
+        "index": "gbm",
+        "RMSE": 20.700999620826828,
+        "MAE": 8.560154478417575,
+        "RMSE vs naive": 0.9096503968579387,
+        "MAE, recession quarters": 26.15816877901774,
+        "MAE, expansion quarters": 6.199445242971215,
+        "DM vs naive": -2.3315545253161334,
+        "DM p": 0.02190758391532292
+      },
+      {
+        "index": "ensemble",
+        "RMSE": 20.69096979783483,
+        "MAE": 8.401726044664278,
+        "RMSE vs naive": 0.9092096629498085,
+        "MAE, recession quarters": 25.884079000186105,
+        "MAE, expansion quarters": 6.05653235550891,
+        "DM vs naive": -2.430423525611352,
+        "DM p": 0.01702102888637618
+      }
+    ],
+    "earnings_h4": [
+      {
+        "index": "naive",
+        "RMSE": 60.27289243270336,
+        "MAE": 35.177270205772274,
+        "RMSE vs naive": 1.0,
+        "MAE, recession quarters": 77.94298487983296,
+        "MAE, expansion quarters": 22.958494584612072,
+        "DM vs naive": null,
+        "DM p": null
+      },
+      {
+        "index": "mean",
+        "RMSE": 60.41340256486617,
+        "MAE": 33.97064573801597,
+        "RMSE vs naive": 1.002331232607091,
+        "MAE, recession quarters": 82.3067205166877,
+        "MAE, expansion quarters": 20.160338658395464,
+        "DM vs naive": 0.11122393906769269,
+        "DM p": 0.9116892167953988
+      },
+      {
+        "index": "ar",
+        "RMSE": 58.180907859324236,
+        "MAE": 31.64010968897038,
+        "RMSE vs naive": 0.9652914521114963,
+        "MAE, recession quarters": 81.46499771775615,
+        "MAE, expansion quarters": 17.404427395031586,
+        "DM vs naive": -1.4846780955097558,
+        "DM p": 0.14116242358059733
+      },
+      {
+        "index": "ardl",
+        "RMSE": 58.05147810924065,
+        "MAE": 32.03387702117194,
+        "RMSE vs naive": 0.9631440564107158,
+        "MAE, recession quarters": 82.32710599138059,
+        "MAE, expansion quarters": 17.664383029683766,
+        "DM vs naive": -1.8020684216988272,
+        "DM p": 0.07492021851929903
+      },
+      {
+        "index": "regime_ardl",
+        "RMSE": 57.74221389683315,
+        "MAE": 31.728319737605457,
+        "RMSE vs naive": 0.9580129900237359,
+        "MAE, recession quarters": 81.68622933275633,
+        "MAE, expansion quarters": 17.454631281848062,
+        "DM vs naive": -1.7473581023625862,
+        "DM p": 0.08402451013419504
+      },
+      {
+        "index": "gbm",
+        "RMSE": 59.940263403595814,
+        "MAE": 33.582053621309164,
+        "RMSE vs naive": 0.9944812831161383,
+        "MAE, recession quarters": 84.54957427518323,
+        "MAE, expansion quarters": 19.019904863059438,
+        "DM vs naive": -0.2333486826908443,
+        "DM p": 0.8160265224302351
+      },
+      {
+        "index": "ensemble",
+        "RMSE": 58.46421015435862,
+        "MAE": 31.915426684068162,
+        "RMSE vs naive": 0.9699917789682286,
+        "MAE, recession quarters": 82.56693377523189,
+        "MAE, expansion quarters": 17.443567515164247,
+        "DM vs naive": -1.4781648308373438,
+        "DM p": 0.14289406327595605
+      }
+    ],
+    "dividends_h1": [
+      {
+        "index": "naive",
+        "RMSE": 2.7219620621523775,
+        "MAE": 2.367178912758125,
+        "RMSE vs naive": 1.0,
+        "MAE, recession quarters": 1.861800907656405,
+        "MAE, expansion quarters": 2.4349735231986,
+        "DM vs naive": null,
+        "DM p": null
+      },
+      {
+        "index": "mean",
+        "RMSE": 2.262138036079636,
+        "MAE": 1.6491600613270807,
+        "RMSE vs naive": 0.8310689070702411,
+        "MAE, recession quarters": 2.2890847582137037,
+        "MAE, expansion quarters": 1.5633165044276558,
+        "DM vs naive": -3.5866621619239787,
+        "DM p": 0.0005388593565250155
+      },
+      {
+        "index": "ar",
+        "RMSE": 1.553007827631455,
+        "MAE": 1.0424926195018207,
+        "RMSE vs naive": 0.570547198002981,
+        "MAE, recession quarters": 1.7578684032525247,
+        "MAE, expansion quarters": 0.9465275753401409,
+        "DM vs naive": -8.840331209977519,
+        "DM p": 6.285396872518617e-14
+      },
+      {
+        "index": "ardl",
+        "RMSE": 1.4714864757433572,
+        "MAE": 0.9945927200255442,
+        "RMSE vs naive": 0.5405977166999113,
+        "MAE, recession quarters": 1.3932131206160958,
+        "MAE, expansion quarters": 0.9411192516536411,
+        "DM vs naive": -9.370017054190676,
+        "DM p": 4.8308582340469204e-15
+      },
+      {
+        "index": "regime_ardl",
+        "RMSE": 1.4564359294632059,
+        "MAE": 0.9846311114244637,
+        "RMSE vs naive": 0.5350684161672469,
+        "MAE, recession quarters": 1.3196215492442023,
+        "MAE, expansion quarters": 0.9396933697657183,
+        "DM vs naive": -9.34090721555837,
+        "DM p": 5.562875020689683e-15
+      },
+      {
+        "index": "gbm",
+        "RMSE": 1.5604982500314422,
+        "MAE": 1.0353425772660472,
+        "RMSE vs naive": 0.5732990447330064,
+        "MAE, recession quarters": 1.4428598111534023,
+        "MAE, expansion quarters": 0.9806756312567676,
+        "DM vs naive": -9.419722999950858,
+        "DM p": 3.7965984345888036e-15
+      },
+      {
+        "index": "ensemble",
+        "RMSE": 1.5097362716772253,
+        "MAE": 1.0143728140548358,
+        "RMSE vs naive": 0.5546500051082304,
+        "MAE, recession quarters": 1.5050328342616859,
+        "MAE, expansion quarters": 0.9485525674417219,
+        "DM vs naive": -9.401157280168665,
+        "DM p": 4.154080906566868e-15
+      }
+    ],
+    "dividends_h4": [
+      {
+        "index": "naive",
+        "RMSE": 10.243320143703764,
+        "MAE": 9.071751560798363,
+        "RMSE vs naive": 1.0,
+        "MAE, recession quarters": 7.318980911677075,
+        "MAE, expansion quarters": 9.572543174833017,
+        "DM vs naive": null,
+        "DM p": null
+      },
+      {
+        "index": "mean",
+        "RMSE": 8.219557808723001,
+        "MAE": 6.194001256886033,
+        "RMSE vs naive": 0.8024310178155758,
+        "MAE, recession quarters": 9.323884010276931,
+        "MAE, expansion quarters": 5.2997490416314905,
+        "DM vs naive": -1.5871497218210913,
+        "DM p": 0.11602536591830707
+      },
+      {
+        "index": "ar",
+        "RMSE": 6.565808879061879,
+        "MAE": 4.4331124953218835,
+        "RMSE vs naive": 0.640984445175002,
+        "MAE, recession quarters": 7.864786722607486,
+        "MAE, expansion quarters": 3.452634144668854,
+        "DM vs naive": -2.9088947281794177,
+        "DM p": 0.004579878550152798
+      },
+      {
+        "index": "ardl",
+        "RMSE": 6.042902635144375,
+        "MAE": 4.175719695568993,
+        "RMSE vs naive": 0.5899359338933432,
+        "MAE, recession quarters": 7.125793169972664,
+        "MAE, expansion quarters": 3.3328415600250856,
+        "DM vs naive": -3.6897664079888797,
+        "DM p": 0.0003861012940067728
+      },
+      {
+        "index": "regime_ardl",
+        "RMSE": 5.94377370197462,
+        "MAE": 4.135896430709976,
+        "RMSE vs naive": 0.5802585117510034,
+        "MAE, recession quarters": 7.051840100348639,
+        "MAE, expansion quarters": 3.302769667956073,
+        "DM vs naive": -3.8269583297451204,
+        "DM p": 0.00024068707172193287
+      },
+      {
+        "index": "gbm",
+        "RMSE": 6.882369533690628,
+        "MAE": 4.5660330543823795,
+        "RMSE vs naive": 0.67188855147918,
+        "MAE, recession quarters": 8.308432063767556,
+        "MAE, expansion quarters": 3.496776194558045,
+        "DM vs naive": -2.455277186942544,
+        "DM p": 0.01602163965213062
+      },
+      {
+        "index": "ensemble",
+        "RMSE": 6.359639209103008,
+        "MAE": 4.252575024836238,
+        "RMSE vs naive": 0.620857214251189,
+        "MAE, recession quarters": 7.688343982170378,
+        "MAE, expansion quarters": 3.270926751312198,
+        "DM vs naive": -3.1552334159882105,
+        "DM p": 0.002188140001196219
+      }
+    ]
+  },
+  "coverage": {
+    "earnings_h1": [
+      {
+        "index": "Gaussian",
+        "coverage": 0.7634408602150538,
+        "coverage, recession windows": 0.2727272727272727,
+        "coverage, expansions": 0.8292682926829268,
+        "mean width": 31.82144938128415,
+        "median width": 42.53787983107577,
+        "worst 20q rolling coverage": 0.4
+      },
+      {
+        "index": "Split conformal",
+        "coverage": 0.7956989247311828,
+        "coverage, recession windows": 0.45454545454545453,
+        "coverage, expansions": 0.8414634146341463,
+        "mean width": 48.100932424165805,
+        "median width": 30.215605654991005,
+        "worst 20q rolling coverage": 0.6
+      },
+      {
+        "index": "Adaptive conformal (ACI)",
+        "coverage": 0.8602150537634409,
+        "coverage, recession windows": 0.5454545454545454,
+        "coverage, expansions": 0.9024390243902439,
+        "mean width": 91.36930628477329,
+        "median width": 42.61774489997096,
+        "worst 20q rolling coverage": 0.7
+      }
+    ],
+    "earnings_h4": [
+      {
+        "index": "Gaussian",
+        "coverage": 0.7444444444444445,
+        "coverage, recession windows": 0.3,
+        "coverage, expansions": 0.8714285714285714,
+        "mean width": 88.33146151334203,
+        "median width": 113.12636823106159,
+        "worst 20q rolling coverage": 0.4
+      },
+      {
+        "index": "Split conformal",
+        "coverage": 0.7777777777777778,
+        "coverage, recession windows": 0.3,
+        "coverage, expansions": 0.9142857142857143,
+        "mean width": 209.2470353149526,
+        "median width": 113.66048297458595,
+        "worst 20q rolling coverage": 0.55
+      },
+      {
+        "index": "Adaptive conformal (ACI)",
+        "coverage": 0.8444444444444444,
+        "coverage, recession windows": 0.45,
+        "coverage, expansions": 0.9571428571428572,
+        "mean width": 350.64319161187854,
+        "median width": 224.87751582818282,
+        "worst 20q rolling coverage": 0.75
+      }
+    ],
+    "dividends_h1": [
+      {
+        "index": "Gaussian",
+        "coverage": 0.7956989247311828,
+        "coverage, recession windows": 0.7272727272727273,
+        "coverage, expansions": 0.8048780487804879,
+        "mean width": 3.2276656246965802,
+        "median width": 3.4255468995883827,
+        "worst 20q rolling coverage": 0.55
+      },
+      {
+        "index": "Split conformal",
+        "coverage": 0.8602150537634409,
+        "coverage, recession windows": 0.7272727272727273,
+        "coverage, expansions": 0.8780487804878049,
+        "mean width": 4.451172321002716,
+        "median width": 3.834854382019566,
+        "worst 20q rolling coverage": 0.7
+      },
+      {
+        "index": "Adaptive conformal (ACI)",
+        "coverage": 0.9032258064516129,
+        "coverage, recession windows": 0.7272727272727273,
+        "coverage, expansions": 0.926829268292683,
+        "mean width": 6.501507658498865,
+        "median width": 4.744198674049481,
+        "worst 20q rolling coverage": 0.85
+      }
+    ],
+    "dividends_h4": [
+      {
+        "index": "Gaussian",
+        "coverage": 0.7555555555555555,
+        "coverage, recession windows": 0.5,
+        "coverage, expansions": 0.8285714285714286,
+        "mean width": 11.876633673137766,
+        "median width": 13.16130376370895,
+        "worst 20q rolling coverage": 0.4
+      },
+      {
+        "index": "Split conformal",
+        "coverage": 0.8666666666666667,
+        "coverage, recession windows": 0.65,
+        "coverage, expansions": 0.9285714285714286,
+        "mean width": 23.00456525555023,
+        "median width": 17.055587123202496,
+        "worst 20q rolling coverage": 0.7
+      },
+      {
+        "index": "Adaptive conformal (ACI)",
+        "coverage": 0.9111111111111111,
+        "coverage, recession windows": 0.65,
+        "coverage, expansions": 0.9857142857142858,
+        "mean width": 37.72810057169425,
+        "median width": 34.90265454067703,
+        "worst 20q rolling coverage": 0.75
+      }
+    ]
+  },
+  "live": {
+    "earnings": {
+      "origin": "2023Q2",
+      "level now": 181.17,
+      "point %": 9.37490409339265,
+      "split conformal 90%": "[-27.7, +46.5]",
+      "ACI 90%": "unbounded",
+      "ACI quantile level": 1.0849999999999997
+    },
+    "dividends": {
+      "origin": "2023Q2",
+      "level now": 68.71,
+      "point %": 5.596102409494771,
+      "split conformal 90%": "[-0.5, +11.7]",
+      "ACI 90%": "[-0.5, +11.7]",
+      "ACI quantile level": 0.8849999999999997
+    }
+  },
+  "scenarios": [
+    {
+      "level_0": "Earnings (EPS)",
+      "level_1": "Baseline",
+      "median 9q change %": 11.461110744520763,
+      "median peak-to-trough %": -6.118799609735226,
+      "5% worst peak-to-trough %": -54.29331044383417
+    },
+    {
+      "level_0": "Earnings (EPS)",
+      "level_1": "Adverse",
+      "median 9q change %": -2.4883766076151392,
+      "median peak-to-trough %": -11.98115756811492,
+      "5% worst peak-to-trough %": -56.585328059071706
+    },
+    {
+      "level_0": "Earnings (EPS)",
+      "level_1": "Severely adverse",
+      "median 9q change %": -19.35243509568426,
+      "median peak-to-trough %": -25.770685857922572,
+      "5% worst peak-to-trough %": -63.76477349455851
+    },
+    {
+      "level_0": "Earnings (EPS)",
+      "level_1": "Stagflation",
+      "median 9q change %": 1.7642333691834322,
+      "median peak-to-trough %": -9.395328951583659,
+      "5% worst peak-to-trough %": -54.87605528089827
+    },
+    {
+      "level_0": "Dividends (DPS)",
+      "level_1": "Baseline",
+      "median 9q change %": 17.175478661334065,
+      "median peak-to-trough %": 0.0,
+      "5% worst peak-to-trough %": -5.012914247489411
+    },
+    {
+      "level_0": "Dividends (DPS)",
+      "level_1": "Adverse",
+      "median 9q change %": 13.990307292072135,
+      "median peak-to-trough %": 0.0,
+      "5% worst peak-to-trough %": -6.449350501183611
+    },
+    {
+      "level_0": "Dividends (DPS)",
+      "level_1": "Severely adverse",
+      "median 9q change %": 9.629521634272864,
+      "median peak-to-trough %": -0.16819153293977096,
+      "5% worst peak-to-trough %": -9.511691790848984
+    },
+    {
+      "level_0": "Dividends (DPS)",
+      "level_1": "Stagflation",
+      "median 9q change %": 15.519042809253358,
+      "median peak-to-trough %": 0.0,
+      "5% worst peak-to-trough %": -5.481333337657196
+    }
+  ],
+  "checks": [
+    {
+      "area": "Regimes",
+      "check": "Real-time recession probability vs NBER (AUC)",
+      "value": "0.987",
+      "threshold": ">= 0.85",
+      "status": "PASS"
+    },
+    {
+      "area": "Intervals",
+      "check": "ACI coverage, earnings h=1",
+      "value": "0.860",
+      "threshold": "0.85 to 0.95",
+      "status": "PASS"
+    },
+    {
+      "area": "Intervals",
+      "check": "ACI coverage, earnings h=4",
+      "value": "0.844",
+      "threshold": "0.85 to 0.95",
+      "status": "WARN"
+    },
+    {
+      "area": "Intervals",
+      "check": "ACI coverage, dividends h=1",
+      "value": "0.903",
+      "threshold": "0.85 to 0.95",
+      "status": "PASS"
+    },
+    {
+      "area": "Intervals",
+      "check": "ACI coverage, dividends h=4",
+      "value": "0.911",
+      "threshold": "0.85 to 0.95",
+      "status": "PASS"
+    },
+    {
+      "area": "Explainability",
+      "check": "SHAP additivity (sum of SHAP + base = prediction)",
+      "value": "max error 1.1e-14",
+      "threshold": "< 1e-6",
+      "status": "PASS"
+    },
+    {
+      "area": "Engine",
+      "check": "Rust kernel bit-identical to NumPy reference",
+      "value": "True",
+      "threshold": "True",
+      "status": "PASS"
+    },
+    {
+      "area": "Scenario model",
+      "check": "Earnings respond positively to GDP growth",
+      "value": "beta = 0.259",
+      "threshold": "> 0",
+      "status": "PASS"
+    },
+    {
+      "area": "Scenario model",
+      "check": "Dividends: payout mean reversion (k < 0) and positive earnings pass-through",
+      "value": "k = -0.89",
+      "threshold": "k < 0, b1, b2 > 0",
+      "status": "PASS"
+    },
+    {
+      "area": "Engine",
+      "check": "Joint resampling: dividend shocks use the earnings shocks' historical dates",
+      "value": "True",
+      "threshold": "True",
+      "status": "PASS"
+    },
+    {
+      "area": "Stability",
+      "check": "CUSUM test, earnings conditional model",
+      "value": "within bounds",
+      "threshold": "within 5% bounds",
+      "status": "PASS"
+    },
+    {
+      "area": "Stability",
+      "check": "CUSUM test, dividends conditional model",
+      "value": "within bounds",
+      "threshold": "within 5% bounds",
+      "status": "PASS"
+    },
+    {
+      "area": "Drift",
+      "check": "earnings h=1: max |standardised error|, last 8 forecasts",
+      "value": "0.80",
+      "threshold": "< 3",
+      "status": "PASS"
+    },
+    {
+      "area": "Drift",
+      "check": "earnings h=4: max |standardised error|, last 8 forecasts",
+      "value": "4.06",
+      "threshold": "< 3",
+      "status": "WARN"
+    },
+    {
+      "area": "Drift",
+      "check": "dividends h=1: max |standardised error|, last 8 forecasts",
+      "value": "2.57",
+      "threshold": "< 3",
+      "status": "PASS"
+    },
+    {
+      "area": "Drift",
+      "check": "dividends h=4: max |standardised error|, last 8 forecasts",
+      "value": "2.23",
+      "threshold": "< 3",
+      "status": "PASS"
+    },
+    {
+      "area": "Input drift",
+      "check": "PSI of gdp_g, last 20 quarters vs history",
+      "value": "1.818",
+      "threshold": "< 0.25",
+      "status": "WARN"
+    },
+    {
+      "area": "Input drift",
+      "check": "PSI of infl, last 20 quarters vs history",
+      "value": "0.131",
+      "threshold": "< 0.25",
+      "status": "PASS"
+    },
+    {
+      "area": "Input drift",
+      "check": "PSI of d_ust10y, last 20 quarters vs history",
+      "value": "0.092",
+      "threshold": "< 0.25",
+      "status": "PASS"
+    },
+    {
+      "area": "Input drift",
+      "check": "PSI of eq_ret, last 20 quarters vs history",
+      "value": "0.260",
+      "threshold": "< 0.25",
+      "status": "WARN"
+    }
+  ]
+}
